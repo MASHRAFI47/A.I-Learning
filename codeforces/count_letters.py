@@ -8,5 +8,9 @@ for char in str:
     count[char] = count.get(char, 0) + 1
 
 
-for k,v in count.items():
-    print(k, ":", v)
+# for k,v in count.items():
+#     print(k, ":", v)
+
+
+for ch in sorted(count.keys()):
+    print(f"{ch} : {count[ch]}")
